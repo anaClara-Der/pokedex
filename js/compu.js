@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnPokemon.addEventListener("click", () => {
         imgPokemon.innerHTML = "";
         informacion.innerHTML = "";
-        const pokemonElegido = nombrePokemon.value; 
+        const pokemonElegido = nombrePokemon.value.toLowerCase(); 
         fetchData(pokemonElegido);
         nombrePokemon.value = "";  
     })   
