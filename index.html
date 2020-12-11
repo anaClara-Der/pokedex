@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/tapa-uno.css">
-    <link rel="stylesheet" href="css/tapa-dos.css">
+    <link rel="stylesheet" href="css/movil.css">
 </head>
+
 <body>
     <h1>Pokedex</h1>
     <div id="contenedor">
@@ -40,12 +42,11 @@
                 </div>
             </div>
             <!--Parte inferior-->
-            
             <form class="di" id="p-inferior">
                 <input type="text" name="pokemon" id="nombre-pokemon" placeholder="Nombre o numero" autocomplete="off">
                 <button id="btn-pokemon" type="button">Buscar Pokemon</button>
             </form>
-           
+
         </div>
         <!--medio-->
         <div id="medio">
@@ -82,15 +83,15 @@
     <template id="template-info">
         <h2 id="nombre"></h2>
         <p id="hp"></p>
-       <div id="info-div">
-        <span id="tipo"></span>
-        <span id="ataque"></span>
-        <span id="defensa"></span>
-        <span id="Velocidad"></span>
-    </div>
+        <div id="info-div">
+            <span id="tipo"></span>
+            <span id="ataque"></span>
+            <span id="defensa"></span>
+            <span id="Velocidad"></span>
+        </div>
     </template>
-
     <script src="https://kit.fontawesome.com/d9e2ae4403.js" crossorigin="anonymous"></script>
     <script src="js/compu.js"></script>
 </body>
+
 </html>
