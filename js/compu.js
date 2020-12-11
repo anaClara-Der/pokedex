@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
         imgPokemon.innerHTML = "";
         informacion.innerHTML = "";
         const pokemonElegido = nombrePokemon.value; 
-        fetchData(pokemonElegido); 
-    })    
+        fetchData(pokemonElegido);
+        nombrePokemon.value = "";  
+    })   
+    
 }
 //pedido api
   const fetchData = async(idNombre) => {

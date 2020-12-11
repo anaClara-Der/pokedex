@@ -133,20 +133,16 @@ h1{
     margin-bottom: 4px;
 }
 /*Parte de buscar*/
-#buscador{
-    display: flex;
-    margin-top: 15px;
-    width: 100%;
-}
+
 #p-inferior{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 #nombre-pokemon{
-    width: 100%;
     height: 40px;
     padding: 5px 5px;
     color:var(--negro);
@@ -161,27 +157,24 @@ color: var(--negro);
 }
 #btn-pokemon{
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 35px;
     border: none;
     background-color: var(--negro);
     color: var(--blanco);
     cursor: pointer;
-    outline: none;
-    transition: transform 0.2s;
+    outline: none;  
+    position: relative; 
+    border-bottom: 3px solid rgb(56, 54, 54);
+    border-left: 1px solid rgb(56, 54, 54);
+    transition: transform 0.2s border-bottom 0.1s;
 }
-#btn-pokemon:hover{
-    transform: scale(0.9);
+#btn-pokemon:active{
+    transform: scale(0.95);
+    border-bottom: none;
 }
-#cruz{
-    width: 40%;
-    margin-left: 10px;
-}
-#btn-cruz{
-    width: 100%;
-    font-size: 70px;
-    text-align: center;
-}
+
+
 /*Medio*/
 #medio{
     display: inline-block;
