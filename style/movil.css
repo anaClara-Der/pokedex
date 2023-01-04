@@ -1,0 +1,82 @@
+@media (max-width: 1024px) {
+  #contenedor {
+    flex-direction: column;
+    width: 95%;
+  }
+  /*tapa uno*/
+  #pokemon {
+    width: 100%;
+  }
+  #nombre-pokemon {
+    height: 25px;
+  }
+  #btn-pokemon {
+    height: 25px;
+    font-size: 16px;
+  }
+  /*MEDIO*/
+  #medio {
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+  }
+  /*Tapa dos*/
+  #pokedx-tapa-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #informacion {
+    width: 100%;
+  }
+  #nombre {
+    font-size: 40px;
+  }
+  #hp {
+    font-size: 25px;
+  }
+  #info-div {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #info-div span {
+    font-size: 25px;
+  }
+  .cuadricula {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  #contenedor {
+    flex-direction: column;
+    width: 95%;
+  }
+  #info-div {
+    flex-direction: column;
+  }
+  /*MEDIO*/
+  #medio {
+    width: 100%;
+    height: 20px;
+    flex-direction: row;
+  }
+
+  /*Tapa dos*/
+  #pokedx-tapa-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #informacion {
+    width: 100%;
+    height: 40vh;
+  }
+  #nombre {
+    font-size: 25px;
+  }
+  #info-div span,
+  #hp {
+    font-size: 16px;
+  }
+}

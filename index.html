@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/movil.css">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <div id="contenedor">
+        <!--Parte superior-->
+        <div class="di" id="pokedex">
+            <div class=" di p-superior">
+                <div class=" di superior-cir"></div>
+                <div class="di cir cir-r"></div>
+                <div class="di cir cir-a"></div>
+                <div class="di cir cir-v"></div>
+            </div>
+            <!--Parte del medio-->
+            <div class="di" id="p-img">
+                <div id="cont-img">
+                    <div class="di">
+                        <div class="di img-cir-r"></div>
+                        <div class="di img-cir-r"></div>
+                    </div>
+                    <div id="pokemon">
+                        <!--va la imagen del pokemon-->
+                    </div>
+                </div>
+                <div id="circulo-lineas">
+                    <div class="di img-cir"></div>
+                    <div class="di lineas">
+                        <span class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Parte inferior-->
+            <form class="di" id="p-inferior">
+                <label class="container-buscador" for="">Ingresa nombre o numero del pockemon
+                <input type="text" name="pokemon" id="nombre-pokemon" placeholder="pikachu" autocomplete="off"></label>
+                <button id="btn-pokemon" type="button">Buscar Pokemon</button>
+            </form>
+
+        </div>
+        <!--medio-->
+        <div id="medio">
+            <div class="di medio-divi"></div>
+            <div class="di medio-divi"></div>
+        </div>
+        <!--otra tapa de pokedex-->
+        <div class="di" id="pokedx-tapa-dos">
+            <div class="di" id="informacion">
+                <!--informacion del pokemon-->
+            </div>
+            <div class=" di cuadricula">
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+                <div class="di cuadrados"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--TEMPLATES-->
+    <!--imagen del Pokemon-->
+    <template id="template-img">
+        <img class="img-poke" src="" alt="">
+    </template>
+    <!--informacion del pokemon-->
+    <template id="template-info">
+        <h2 id="nombre"></h2>
+        <p id="hp"></p>
+        <div id="info-div">
+            <span id="tipo"></span>
+            <span id="ataque"></span>
+            <span id="defensa"></span>
+            <span id="Velocidad"></span>
+        </div>
+    </template>
+    <script src="https://kit.fontawesome.com/d9e2ae4403.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

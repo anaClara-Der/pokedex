@@ -1,0 +1,246 @@
+:root {
+  --colorRPokedex: #cc0000;
+  --colorR: #ff0000;
+  --colorA: #ffff00;
+  --colorV: #00ff00;
+  --bordeImagen: #cccccc;
+  --celeste: #85c1e9;
+  --blanco: #fcfcfc;
+  --negro: #000000;
+  --gris: #353232;
+  --desenfoque: 0 4px 7px -2px var(--negro);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*todos los div*/
+.di {
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+/*contenedor general*/
+#contenedor {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+/*POKEDEX*/
+#pokedex {
+  background-color: var(--colorRPokedex);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/*Parte de arriba*/
+.p-superior {
+  padding: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  box-shadow: var(--desenfoque);
+}
+.superior-cir {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--celeste);
+  border: 4px solid var(--blanco);
+  margin: 0px 15px 5px 0px;
+}
+.cir {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: solid 1px black;
+}
+.cir-r {
+  background-color: var(--colorR);
+}
+.cir-a {
+  background-color: var(--colorA);
+}
+.cir-v {
+  background-color: var(--colorV);
+}
+/*Parte de la imagen*/
+#p-img {
+  background-color: var(--bordeImagen);
+  display: inline-block;
+  padding: 2px 10px 15px 10px;
+  box-shadow: var(--desenfoque);
+  border-radius: 5px 5px 5px 30px;
+}
+#cont-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-cir-r {
+  width: 10px;
+  height: 10px;
+  background-color: var(--colorR);
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.img-cir {
+  width: 20px;
+  height: 20px;
+  background-color: var(--colorR);
+  border-radius: 50%;
+  margin-top: 5px;
+  border: solid 1px var(--negro);
+}
+#pokemon {
+  width: 215px;
+  height: 215px;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-poke {
+  width: 90%;
+  height: 90%;
+}
+#img-pokemon {
+  border: solid 1px var(--negro);
+}
+#circulo-lineas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lineas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.span {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #000000;
+  margin-bottom: 4px;
+}
+/*Parte de buscar*/
+
+#p-inferior {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#nombre-pokemon {
+  height: 40px;
+  padding: 5px 5px;
+  color: var(--negro);
+  border: none;
+  background-color: rgb(113, 218, 109);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+}
+.container-buscador{
+  display: flex;
+  flex-direction: column;
+}
+::placeholder {
+  color: var(--gris);
+}
+#btn-pokemon {
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border-bottom: 3px solid rgb(56, 54, 54);
+  border-left: 1px solid rgb(56, 54, 54);
+  transition: transform 0.2s border-bottom 0.1s;
+}
+#btn-pokemon:active {
+  transform: scale(0.95);
+  border-bottom: none;
+}
+
+/*Medio*/
+#medio {
+  display: inline-block;
+  width: 30px;
+  background-color: var(--colorRPokedex);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0px 9px -3px var(--negro);
+}
+.medio-divi {
+  width: 30px;
+  height: 40px;
+  background-color: var(--colorRPokedex);
+  box-shadow: 0 0px 9px -3px var(--negro);
+}
+/*Tapa dos*/
+#pokedx-tapa-dos {
+  background-color: var(--colorRPokedex);
+  box-shadow: 0 0px 9px -3px var(--negro);
+  padding: 20px 20px;
+}
+
+#informacion {
+  width: 250px;
+  height: 250px;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#nombre {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#hp {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#info-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#info-div span {
+  display: inline-block;
+  margin: 5px;
+}
+.cuadricula {
+  width: 100%;
+  height: 100px;
+  background-color: var(--bordeImagen);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  border-radius: 3px;
+}
+.cuadrados {
+  box-shadow: 5px 10px 20px gray inset;
+  border-radius: 3px;
+}
+.cuadrados:hover {
+  background-color: var(--colorV);
+}
