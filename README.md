@@ -5,3 +5,5 @@
 - Se puede buscar pokemones por su nombre o número
 - Te mostrará una imagen e información sobre el mismo 
 
+Práctica de Css 
+
